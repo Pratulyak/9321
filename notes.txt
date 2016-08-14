@@ -1,0 +1,98 @@
+//Comp9321 notes for 16s2
+Main objective- Build web applications fully functioning.
+Web applications: Requires greater degree of modeling and more sophisticated tools and a weel defined repeatbale process.
+
+Three tier architecture: Presentation, presentation/business logic, data storage
+  - essentially user interface application database.
+
+Thin vs Fat client based architechture. Thin meaning only UI is client side or both UI
+and application is on client side.
+
+
+//Course Learning Outcomes:
+-design and implement a complete web application from scratch
+- identify and apply design pattersn
+-apply techniques to increase the performacne and scalability of your application
+
+Web essentials: clients, servers, communication
+
+Basic internet protocols, TCP/IP the concepts of port based communication.
+Also the connection based communication allowing for splitting up of data into packets
+
+URL:
+
+-Scheme - underlying protocol to be used
+-Host[:port] - hostname or IP address of the web server. For HTTP, the default port is 80
+-path - Path to resource from the root directory of the web server
+-url-params - optional value pairs
+-anchor - reference to a position
+
+HTTP:
+-request-response model for communicatiion
+-format is dictated by HTTP
+-stateless, each request-response pair is a separate interaction
+
+HTTP Response (from server to browser):
+-Composed of Status Line + Header + Body
+-Status Line: 200 OK, 404 Not Found etc
+-Header:Content-Type, Content-Language, Content-Length, Cache-control, etc.
+-Body: body contains requested data, in specific MIME format
+
+Common Gateway Interface(CGI):
+-Allows a browser to initiate a request to run a program
+-not a scalable solution for big applications(e-commerce)
+
+PHP: An open-source technology. It comes with rich built-in functionality, such as file upload.
+Servlets, Java Server Pages: Java's version of CGI
+ASP.NET: Microsoft's answer to better CGI technology
+
+==================Week 2========================
+
+Servlets:
+
+Different layers in an application
+
+Presentation:
+  -JSP,XSLT,CSS,HTML
+Business Logic:
+  -Java classes
+Data Access Layer:
+  -Data Access objects
+Data Store:
+  -RDBMS, OODBMS,XML database
+
+
+Presentation layer:
+HTML is a markup language which uses a set of markup tags that describe different document content.
+  html -> describes an HTML document.
+  head -> provides information about the document.
+  title -> provides a title for the document.
+  body -> describes the visible page content.
+  h1 -> describes a heading.
+  p -> describes a paragraph
+Forms are used to collect user input
+HTML <form> method attribute specifies how to send form-data
+  -URL Variables get or HTTP post transaction Post
+
+GET:appends form-data into the url in name and value pairs
+*****Never send sensitive data using GET(visible in URL)****
+    -can be used for query options such as google
+POST:
+    • Appends form-data inside the body of the HTTP request (data is not
+    shown in URL).
+    • Has no size limitations.
+    • Form submissions with POST cannot be bookmarked.
+
+
+Static vs Dynamic web pages:
+
+      Static:
+        -Qucik to develop
+        -Cheap to host
+        -Cheap to develop
+
+      Dynamic:
+        -Much more functional website
+        -Much easier to update
+        -New Content brings people back to the site and helps in se
+        -Slower/more expensive to develop and host
